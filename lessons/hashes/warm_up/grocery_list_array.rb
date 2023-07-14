@@ -9,3 +9,12 @@ fridge_items_1 = ["milk", "eggs", "eggs","eggs", "eggs",
 # as an array structured grocery list?
 
 # 2. What might be a more readable way to structure this?
+
+fridge_items_1=
+{
+    "milk":1,
+    "eggs":6,
+    "avocado":2,
+    "tortilla":9
+
+}
