@@ -27,7 +27,7 @@ Use TDD to create a `Dish` class that responds to the following interaction patt
 
 ```ruby
 pry(main)> require './lib/dish'
-#=> true
+=> true
 
 pry(main)> dish = Dish.new("Couscous Salad", :appetizer)
 #=> #<Dish:0x00007f93fe9aa698...>
@@ -35,8 +35,8 @@ pry(main)> dish = Dish.new("Couscous Salad", :appetizer)
 pry(main)> dish.name
 #=> "Couscous Salad"
 
-pry(main)> dish.category
-#=> :appetizer
+pry(main)> dish.cate    gory
+#=> cd 
 ```
 
 ## Iteration 2
