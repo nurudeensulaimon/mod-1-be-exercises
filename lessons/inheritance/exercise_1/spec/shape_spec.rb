@@ -13,12 +13,12 @@ RSpec.describe Shape do
     expect(s.width).to eq(4)
   end
 
-  xit "can calculate area" do
+  it "can calculate area" do
     s = Shape.new("red", 2, 4)
     expect(s.area).to eq(8)
   end
 
-  xit "can calculate perimeter" do
+  it "can calculate perimeter" do
     s = Shape.new("red", 2, 4)
     expect(s.perimeter).to eq(12)
   end

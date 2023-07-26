@@ -12,5 +12,12 @@ end
   # It should also have the following behaviors:
   # - area (width * length)
   # - perimeter (2 * (length + width))
+  def area 
+      length * width
+  end 
 
+  def perimeter 
+      2 * (length + width)
+  end 
 end
+
