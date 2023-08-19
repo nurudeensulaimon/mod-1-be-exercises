@@ -25,14 +25,21 @@ class Potluck
       arr 
   end 
 
-  def menu
-    menu = {}
-    binding.pry
-    @dishes.each do |dish|
-  if dish.category ==category
-    menu[category] = dish.name
-  end   
-end 
-end   
-end 
+  def menu 
+    the_menu = Hash.new {|hash_obj, key| hash_obj[key] = []}
+    appetizers = get_all_from_category(:appetizer).map {|dish| dish.name}
+    appetizers.each do |appetizer|
+      the_menu[:appetizers] << appetizer
+    end
+    desserts = get_all_from_category(:dessert).map {|dish| dish.name}
+    desserts.each do |dessert|
+      the_menu[:desserts] << dessert
+    end
+    entres = get_all_from_category(:entre).map {|dish| dish.name}
+    entres.each do |entre|
+      the_menu[:entres] << entre
+    end
+    the_menu
+  end
+end
   
