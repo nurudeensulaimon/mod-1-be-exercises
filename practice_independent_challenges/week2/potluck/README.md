@@ -35,8 +35,8 @@ pry(main)> dish = Dish.new("Couscous Salad", :appetizer)
 pry(main)> dish.name
 #=> "Couscous Salad"
 
-pry(main)> dish.cate    gory
-#=> cd 
+pry(main)> dish.category
+#=> :appetizer 
 ```
 
 ## Iteration 2
@@ -52,7 +52,7 @@ pry(main)> require './lib/potluck'
 
 pry(main)> potluck = Potluck.new("7-13-18")
 #=> #<Potluck:0x00007fccc4abe940...>
-
+d
 pry(main)> potluck.date
 #=> "7-13-18"
 
